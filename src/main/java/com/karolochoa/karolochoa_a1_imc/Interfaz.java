@@ -169,12 +169,16 @@ public class Interfaz extends javax.swing.JPanel {
         
         if (IMC < 18.5) {
             EstadoIMC = "Tu resultado está por debajo del minímo, tienes bajo peso.";
-        } else if (IMC < 25.0) {
+        } else if (IMC < 24.9) {
             EstadoIMC = "Tu resultado está en un nivel normal, ¡felicidades!";
         } else if (IMC < 29.9) {
-             EstadoIMC = "Tu resultado está algo alto del nivel normal, tienes sobrepeso.";    
-        } else {
-        EstadoIMC = "Tu resultado está muy por encima del nivel normal, tienes obesidad.";
+             EstadoIMC = "Tu resultado está algo alto del nivel normal, tienes sobrepeso.";
+        } else if (IMC < 34.9) {
+             EstadoIMC = "Tu resultado está por encima del nivel normal, tienes obesidad I."; 
+        } else if (IMC < 39.9) {
+             EstadoIMC = "Tu resultado está bastante alto del nivel normal, tienes obesidad II.";
+        } else {    
+        EstadoIMC = "Tu resultado está muy por encima del nivel normal, tienes obesidad III.";
         }
         
         
